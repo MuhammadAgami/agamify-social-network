@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الملف الشخصي</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="icon" href="../Agamify.png" type="image/png" />
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+</head>
+
+<body style="
+      height: 100vh;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    ">
+  <div class="container">
+    <div class="row justify-content-center">
+      <nav class="col-lg-10 navbar navbar-expand-lg shadow p-2 mb-2 bg-body-tertiary rounded" style="direction: rtl">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Agamify</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الملف الشخصي</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <div id="userInformation"></div>
+              <button class="btn btn-outline-danger ms-2" id="logout" onclick="logoutPage()">
+                تسجيل الخروج
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center align-items-center" style="direction: ltr">
+    <div class="card mb-3 col-10 shadow-sm">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="Agamify.png" class="img-fluid rounded-circle" alt="Profile Picture"
+            style="width: 200px; height: 200px; object-fit: cover" />
+        </div>
+        <div class="col-md-5 p-3">
+          <div>
+            <b>Email:</b>
+            <span id="email"></span>
+          </div>
+          <div><b>Name:</b><span id="name">Mohamed</span></div>
+          <div><b>Username:</b> <span id="username">mohamedagami</span></div>
+        </div>
+        <div class="col-md-3 text-center p-3">
+          <div style="font-size: 30px; color: #007bff" id="postCount"></div>
+          <div style="font-size: 30px; color: #28a745" id="commentCount"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="nameOfUserPost" class="text-light text-center m-3 h1">nameOfUserPost</div>
+  <div id="userPost"></div>
+  <script src="../JS/profile.js"></script>
+</body>
+
+</html>

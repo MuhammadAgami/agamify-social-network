@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Agamify هي أكبر منصة تواصل اجتماعي عربية تتيح لك مشاركة الأفكار، الصور، الفيديوهات، وبناء مجتمع مميز عبر الإنترنت." />
+  <meta name="keywords"
+    content="Agamify, منصة تواصل اجتماعي, التواصل الاجتماعي, المجتمع العربي, مشاركة الأفكار, مشاركة الصور, الفيديوهات, مجتمع افتراضي" />
+  <meta name="author" content="Muhammad Agami (Agamify)" />
+  <title>Agamify</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="icon" href="Agamify.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet" />
+  <script src="node_modules/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <!-- *************************************************************** -->
+  <!-- what is Agamify -->
+  <div style="color: #fff; text-align: center; width: 400px">
+    <h1>Agamify</h1>
+    <img src="Agamify.png" alt="" width="400px" />
+    <p>
+      Agamify هي منصة تواصل اجتماعي عربية، تجمع بين الأفراد وتتيح لهم مشاركة
+      الأفكار، الصور، والفيديوهات، وبناء مجتمع افتراضي مميز عبر الإنترنت.
+    </p>
+  </div>
+  <!-- **************************************************************** -->
+  <!-- form login -->
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true" />
+    <div class="signup">
+      <div>
+        <label for="chk" aria-hidden="true">انشاء حساب</label>
+        <input type="text" name="name" placeholder="الاسم" id="registerName" />
+
+        <input type="text" name="username" placeholder="اسم المستخدم" id="registerUsername" />
+        <input type="password" name="pswd" placeholder="كلمة السر" id="registerPassword" />
+        <input type="file" name="file" placeholder="ارفاق صورة شخصية" id="registerImage" />
+        <button onclick="registerPage()">تسجيل حساب</button>
+      </div>
+    </div>
+
+    <div class="login">
+      <div>
+        <label for="chk" aria-hidden="true">تسجيل الدخول</label>
+        <input type="text" name="username" placeholder="اسم المستخدم" id="usernameLogin" />
+        <input type="password" name="password" placeholder="كلمة السر" id="passwordLogin" />
+        <button onclick="loginPage()">تسجيل الدخول</button>
+        <p id="wrongUserNameOrPassword" style="
+              text-align: center;
+              color: #dc3545;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-weight: bold;
+            "></p>
+      </div>
+    </div>
+  </div>
+  <script src="JS/login.js"></script>
+</body>
+
+</html>

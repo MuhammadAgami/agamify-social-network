@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عرض تفاصيل المنشور</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link rel="icon" href="../Agamify.png" type="image/png" />
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: pink">
+  <div class="container">
+    <!-- start the navbar -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- تعديل هنا: تأكد من أن navbar يأخذ مساحة col-lg-10 -->
+        <nav class="col-lg-10 navbar navbar-expand-lg shadow p-2 mb-2 bg-body-tertiary rounded" style="direction: rtl">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Agamify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">الصفحة الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">الملف الشخصي</a>
+                </li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <div id="userInformation"></div>
+                <button class="btn btn-outline-danger ms-2" id="logout" onclick="logoutPage()">
+                  تسجيل الخروج
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- end the navbar -->
+    <!-- *************************************************************************************** -->
+    <div id="GoShowDatails"></div>
+    <div id="liveAlertPlaceholder" style="position: absolute; z-index: 99; bottom: 60px; right: 10px"></div>
+    <script src="../JS/showDetails.js"></script>
+    <script src="../JS/showNavpar.js"></script>
+</body>
+
+</html>
