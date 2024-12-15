@@ -1,7 +1,7 @@
 // this is function logout
 function logoutPage() {
   localStorage.clear();
-  location.href = "login.html";
+  location.href = "../index.html";
 }
 // **********************************************************************
 
