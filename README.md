@@ -54,13 +54,6 @@ Agmify is a modern social networking platform designed to connect people and sha
 - Advanced analytics for user activity.
 - AI-powered content recommendations.
 
----
-
-## 🌐 Live Demo
-
-[Check out Agmify in action!](https://example.com) *(Replace with your live link)*
-
----
 
 ## 🛠️ Installation & Setup
 
@@ -92,7 +85,7 @@ We welcome contributions! Please feel free to submit a Pull Request or report an
 
 ## 📧 Contact
 
-For inquiries, contact us at: **info@agmify.com**
+For inquiries, contact us at: **mohamedagami596@gmail.com**
 
 ---
 
