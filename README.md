@@ -41,9 +41,7 @@ Agmify is a modern social networking platform designed to connect people and sha
 
 ## 📊 Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript, React
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
+- **Frontend**: HTML, CSS, JavaScript
 - **APIs**: RESTful APIs for communication
 
 ---
