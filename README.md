@@ -1,6 +1,6 @@
 # Agmify
 
-![Agmify Logo](https://via.placeholder.com/150)
+![Agmify Logo](https://github.com/MuhammadAgami/agamify-social-network/blob/master/Agamify.png)
 
 **Welcome to Agmify!** 🚀
 Agmify is a modern social networking platform designed to connect people and share experiences in a seamless and interactive way.
