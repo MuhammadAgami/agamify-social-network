@@ -70,9 +70,6 @@ Agmify is a modern social networking platform designed to connect people and sha
    ```bash
    npm start
    ```
-
-4. Open your browser and navigate to `http://localhost:3000`.
-
 ---
 
 ## 🤝 Contributing
